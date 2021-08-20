@@ -2,14 +2,12 @@ import classes from './Portfolio.module.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import PortfolioBlock from '../components/PortfolioBlock';
+import SectionBanner from '../components/SectionBanner';
 
 const Portfolio = () => {
     return (
         <Container>
-            <Row className={classes.portfolioBanner}>
-                <h1>Portfolio</h1>
-                <div className={classes.headingUnderline}></div>
-            </Row>
+            <SectionBanner section="Portfolio"/>
             <Row>
                 <PortfolioBlock name="BookApp" tech="React JS, ASP.NET"/>
                 <PortfolioBlock name="Portfolio" tech="React JS"/>

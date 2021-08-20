@@ -1,0 +1,22 @@
+.headingUnderline {
+    width: 7rem;
+    height: .2rem;
+    background-color: #1e91bb;
+    margin: 0 auto 2rem;
+}
+
+.SectionBanner {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .SectionBanner {
+        height: 240px;
+    }
+}
