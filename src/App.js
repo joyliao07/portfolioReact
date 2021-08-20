@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <NavBar></NavBar>
       </Row>
       <Row>
-        <Skills></Skills>
+        <Portfolio></Portfolio>
       </Row>
       <p>Copy@JoyceLiao2021</p>
     </Container>

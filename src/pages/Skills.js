@@ -21,6 +21,7 @@ const Skills = () => {
             <Container fluid className={classes.skills2}>
                 <Row className={classes.title2}>
                     <h2>SKILLS</h2>
+                    <div className={classes.headingUnderline}></div>
                 </Row>
                 <Row>
                     <Col className={classes.skillBlock} md={6} lg={4}>

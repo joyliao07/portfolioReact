@@ -1,0 +1,46 @@
+.headingUnderline {
+    width: 8rem;
+    height: .2rem;
+    background-color: #1e91bb;
+    margin: 0 auto 2rem;
+}
+
+.portfolioBanner {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .portfolioBanner {
+        height: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
