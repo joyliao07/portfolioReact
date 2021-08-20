@@ -6,7 +6,7 @@ import SectionBanner from '../components/SectionBanner';
 
 const Portfolio = () => {
     return (
-        <Container>
+        <Container className={classes.parent}>
             <SectionBanner section="Portfolio"/>
             <Row>
                 <PortfolioBlock name="BookApp" tech="React JS, ASP.NET"/>

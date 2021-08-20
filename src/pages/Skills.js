@@ -6,7 +6,7 @@ import classes from './Skills.module.css';
 
 const Skills = () => {
     return (
-        <>
+        <div className={classes.parent}>
             <Container fluid className={classes.skills}>
                 <Row className={classes.title}>
                     <h1>Developement Experience</h1>
@@ -57,10 +57,7 @@ const Skills = () => {
                 </Row>
 
             </Container>
-        </>
-
-
-
+        </div>
 
     );
 }

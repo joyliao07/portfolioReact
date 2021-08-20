@@ -1,29 +1,13 @@
+.parent {
+    height: 900px;
+    background: rgb(192, 215, 223)
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .parent {
+        height: 1080px;
+    }
+}
 

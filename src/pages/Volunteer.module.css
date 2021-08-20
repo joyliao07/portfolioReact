@@ -1,0 +1,12 @@
+.parent {
+    height: 900px;
+    background: rgb(195, 226, 245);
+}
+
+
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .parent {
+        height: 1080px;
+    }
+}

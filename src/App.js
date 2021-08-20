@@ -14,7 +14,16 @@ function App() {
           <NavBar></NavBar>
       </Row>
       <Row>
-        <Volunteer></Volunteer>
+        <Home/>
+      </Row>
+      <Row>
+        <Skills/>
+      </Row>
+      <Row>
+        <Portfolio/>
+      </Row>
+      <Row>
+        <Volunteer/>
       </Row>
       <p>Copy@JoyceLiao2021</p>
     </Container>

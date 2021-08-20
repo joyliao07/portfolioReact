@@ -9,7 +9,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Volunteer = () => {
     return (
-        <Container>
+        <Container className={classes.parent}>
             <SectionBanner section="Volunteer"/>
             <OwlCarousel items={3} className="owl-theme" loop nav margin={8}>
                 <PortfolioBlock name="Temp-1" tech="React JS, ASP.NET"/>

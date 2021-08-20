@@ -3,5 +3,12 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
+    height: 900px;
+}
+
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .parent {
+        height: 1080px;
+    }
 }
