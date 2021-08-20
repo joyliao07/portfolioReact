@@ -3,10 +3,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import classes from './Skills.module.css';
+import { Element } from 'react-scroll';
 
 const Skills = () => {
     return (
-        <div className={classes.parent}>
+        <Element id="skills" className={classes.parent}>
             <Container fluid className={classes.skills}>
                 <Row className={classes.title}>
                     <h1>Developement Experience</h1>
@@ -18,6 +19,7 @@ const Skills = () => {
                     <Button variant="primary" style={{width: "125px"}}>See Portfolio</Button>
                 </Row>
             </Container>
+
             <Container fluid className={classes.skills2}>
                 <Row className={classes.title2}>
                     <h2>SKILLS</h2>
@@ -55,10 +57,8 @@ const Skills = () => {
                         <p>some text...</p>
                     </Col>
                 </Row>
-
             </Container>
-        </div>
-
+        </Element>
     );
 }
 
