@@ -58,6 +58,7 @@ const Skills = () => {
                     </Col>
                 </Row>
             </Container>
+            <div className={classes.base}></div>
         </Element>
     );
 }

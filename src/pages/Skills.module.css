@@ -1,5 +1,4 @@
 .parent {
-    height: 900px;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +26,7 @@
 }
 
 .title2 {
-    height: 170px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +50,18 @@
     text-align: center;
 }
 
+.base {
+    height: 75px;
+}
+
+
 /* Desktop view: */
 @media (min-width: 767.98px) {
-    .parent {
-        height: 1080px;
-    }
-
     .skills {
         height: 350px;
+    }
+
+    .base {
+        height: 150px;
     }
 }

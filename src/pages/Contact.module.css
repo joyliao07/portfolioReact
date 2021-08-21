@@ -1,0 +1,19 @@
+.parent {
+    background: rgb(227, 227, 228);
+}
+
+.info {
+    height: 450px;
+    padding: 60px;
+    padding-top: 100px;
+}
+
+.info h5 {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.form {
+    height: 450px;
+}
+

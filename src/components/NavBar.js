@@ -41,8 +41,13 @@ const NavBar = () => {
                                     smooth={true} 
                                     duration={500}>Volunteer</Link>
                             </Nav.Link>
-                            <Nav.Link href="#link">Work</Nav.Link>
-                            <Nav.Link href="#link">Contact</Nav.Link>
+                            <Nav.Link> 
+                                <Link
+                                    to="contact" 
+                                    spy={true} 
+                                    smooth={true} 
+                                    duration={500}>Contact</Link>
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     {/*

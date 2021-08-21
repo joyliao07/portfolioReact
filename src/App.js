@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import Volunteer from './pages/Volunteer';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
       </Row>
       <Row>
         <Volunteer/>
+      </Row>
+      <Row>
+        <Contact/>
       </Row>
       <p>Copy@JoyceLiao2021</p>
     </Container>
