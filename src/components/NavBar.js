@@ -1,57 +1,36 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
+import { useState } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 import Scroll from 'react-scroll';
+import NavLink from './NavLink';
 
 const NavBar = () => {
-    const Link = Scroll.Link;
+    // const [navExpanded, setNavExpanded] = useState(false);
+    // setNavExpanded = (expanded) => {
+    //     setNavExpanded();
+    // }
+    
+    // setNavClose = () => {
+    //     this.setState({ navExpanded: false });
+    // }
+
+
     return(
         <div>
-            <Navbar bg="light" expand="lg" fixed="top">
+            <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
                 <Container fluid>
                     <Navbar.Brand href="#home">Joyce Liao</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav className="justify-content-end" style={{ width: "100%" }}>
-                            <Nav.Link>
-                                <Link
-                                    to="home" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    duration={500}>Home</Link>
-                            </Nav.Link>
-                            <Nav.Link> 
-                                <Link
-                                    to="skills" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    duration={500}>Skills</Link>
-                            </Nav.Link>
-                            <Nav.Link> 
-                                <Link
-                                    to="portfolio" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    duration={500}>Portfolio</Link>
-                            </Nav.Link>
-                            <Nav.Link> 
-                                <Link
-                                    to="volunteer" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    duration={500}>Volunteer</Link>
-                            </Nav.Link>
-                            <Nav.Link> 
-                                <Link
-                                    to="contact" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    duration={500}>Contact</Link>
-                            </Nav.Link>
+                            <NavLink dest="home" name="Home"/>
+                            <NavLink dest="skills" name="Skills"/>
+                            <NavLink dest="portfolio" name="Portfolio"/>
+                            <NavLink dest="volunteer" name="Volunteer"/>
+                            <NavLink dest="contact" name="Contact"/>
                         </Nav>
                     </Navbar.Collapse>
-                    {/*
-                    */}
                 </Container>
             </Navbar>
         </div>
