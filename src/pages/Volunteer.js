@@ -1,6 +1,5 @@
 import classes from './Volunteer.module.css';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import SectionBanner from '../components/SectionBanner';
 import PortfolioBlock from '../components/PortfolioBlock';
 import OwlCarousel from 'react-owl-carousel';  
