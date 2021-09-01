@@ -3,9 +3,9 @@
 }
 
 .info {
-    height: 450px;
+    height: 750px;
     padding: 60px;
-    padding-top: 100px;
+    padding-top: 300px;
 }
 
 .info h5 {
@@ -14,6 +14,7 @@
 }
 
 .form {
-    height: 450px;
+    padding-top: 300px;
+    height: 750px;
 }
 
