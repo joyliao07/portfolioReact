@@ -1,0 +1,35 @@
+.screen {
+    background: rgb(89, 88, 88, 0.85);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box h4 {
+    padding-bottom: 9%;
+}
+
+.box {
+    background: rgb(249, 241, 229);
+    position: fixed;
+    z-index: 10;
+    top: 35%;
+    left: 35%;
+    right: 35%;
+    bottom: 35%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    border: 5px solid #888;
+    border-radius: 25px;
+}
+ 
+    

@@ -1,11 +1,11 @@
 .parent {
     background: rgb(227, 227, 228);
+    padding-top: 100px
 }
 
 .info {
-    height: 750px;
     padding: 60px;
-    padding-top: 300px;
+    height: 200px;
 }
 
 .info h5 {
@@ -14,7 +14,33 @@
 }
 
 .form {
-    padding-top: 300px;
+    padding-top: 100px;
+    padding-left: 85px;
     height: 750px;
 }
 
+.email input {
+    margin-top: 5px;
+    width: 400px;
+}
+
+.message textarea {
+    margin-top: 5px;
+    width: 400px;
+    height: 250px;
+    resize: none;
+}
+
+/* Desktop view: */
+@media (min-width: 767.98px) {
+    .info {
+        padding: 60px;
+        padding-top: 170px;
+        height: 750px;
+    }
+
+    .form {
+        padding-top: 100px;
+        height: 750px;
+    }
+}

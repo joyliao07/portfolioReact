@@ -5,22 +5,25 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Element } from 'react-scroll';
-import classes from './Contact.module.css';
 import * as emailjs from "emailjs-com";
+import classes from './Contact.module.css';
+import SectionBanner from '../components/SectionBanner';
+import MessageModal from '../components/modals/MessageModal';
 
 
 const Contact = () => {
     require('dotenv').config();
     const [senderEmail, updateSenderEmail] = useState(' ');
     const [feedback, updateFeedback] = useState(' ');
+    const [modal, setModal] = useState(true);
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
         const receiverEmail = process.env.REACT_APP_emailjsReceiver;
         const templateId = process.env.REACT_APP_emailjsTemplateId;
         const user = process.env.REACT_APP_emailjsUserId;
         sendFeedback({templateId, senderEmail, receiverEmail, feedback, user});
+        setModal(true);
     }
 
     const sendFeedback = ({templateId, senderEmail, receiverEmail, feedback, user}) => {
@@ -56,34 +59,43 @@ const Contact = () => {
     const handleCancel = (event) => {
         updateSenderEmail("");
         updateFeedback("");
-    }    
+    }
+
+    const closeModal = () => {
+        setModal(false);
+    }
 
     return (
         <Element id="contact" className={classes.parent}>
+            {modal && <MessageModal close={closeModal}/> }
             <Container fluid>
+                <SectionBanner section="Contact Me"/>
                 <Row>
                     <Col className={classes.info} md={6} sm={12}>
-                        <h1>Contact Me</h1>
-                        <h5>Please email me to discuss coding questions or simply getting to know each other. I look forward to hearing from you!</h5>
+                        <h5>Please email me to discuss coding or simply getting to know each other. I look forward to hearing from you!</h5>
                         <h>Please allow 24 hours for response.</h>
                     </Col>
                     <Col  className={classes.form} md={6} sm={12}>
                         <form onSubmit={handleSubmit}>
-                            <div className="mb-3" controlId="exampleForm.ControlInput1">
-                                <label>Email address</label>
-                                <input type="text" 
+                            <div className={`mb-3 ${classes.email}`}>
+                                <div>
+                                    <label>Email address</label>
+                                </div>
+                                <input 
+                                    type="text" 
                                     placeholder="name@example.com"
                                     value={senderEmail}
-                                    onChange={handleSenderEmail}/>
+                                    onChange={handleSenderEmail}
+                                    required/>
                             </div>
-                            <div className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <label>Message</label>
-                                <input as="textarea" rows={3} 
-                                    id="feedback-entry"
-                                    name="feedback-entry"
-                                    required
+                            <div  className={`mb-3 ${classes.message}`}>
+                                <div>
+                                    <label>Message</label>
+                                </div>
+                                <textarea
                                     onChange={handleMessage}
-                                    value={feedback}/>
+                                    value={feedback}
+                                    required></textarea>
                             </div>
                             <div>
                                 <Button type="submit" variant="primary">Send</Button>{' '}
