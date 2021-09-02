@@ -1,4 +1,3 @@
-import './App.css';
 import NavBar from './components/NavBar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,11 +6,12 @@ import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import Volunteer from './pages/Volunteer';
 import Contact from './pages/Contact';
+import classes from './App.module.css';
 
 
 function App() {
   return (
-    <Container fluid style={{"min-width": "600px"}}>
+    <Container fluid style={{"min-width": "600px"}} className={classes.app}>
       <Row style={{height: "55px"}}>
           <NavBar></NavBar>
       </Row>
@@ -30,7 +30,6 @@ function App() {
       <Row>
         <Contact/>
       </Row>
-      <p>Copy@JoyceLiao2021</p>
     </Container>
   );
 }

@@ -2,20 +2,21 @@ import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Element } from 'react-scroll';
 import * as emailjs from "emailjs-com";
 import classes from './Contact.module.css';
 import SectionBanner from '../components/SectionBanner';
 import MessageModal from '../components/modals/MessageModal';
-
+import Nav from 'react-bootstrap/Nav'
+import Scroll from 'react-scroll';
 
 const Contact = () => {
     require('dotenv').config();
+    const Link = Scroll.Link;
     const [senderEmail, updateSenderEmail] = useState(' ');
     const [feedback, updateFeedback] = useState(' ');
-    const [modal, setModal] = useState(true);
+    const [modal, setModal] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -102,6 +103,22 @@ const Contact = () => {
                                 <Button variant="secondary" onClick={handleCancel}>Cancel</Button>{' '}
                             </div>
                         </form>
+                    </Col>
+
+                </Row>
+                <Row>
+                    <Col>
+                        <p><strong>&copy;JoyceLiao2021</strong></p>
+                    </Col>
+                    <Col>
+                        <Nav.Link>
+                            <Link
+                                to="home"
+                                spy={true} 
+                                duration={200}>
+                                <Button variant="primary">To Top</Button>
+                            </Link>
+                        </Nav.Link>
                     </Col>
                 </Row>
             </Container>

@@ -4,8 +4,12 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import classes from './Skills.module.css';
 import { Element } from 'react-scroll';
+import Nav from 'react-bootstrap/Nav'
+import Scroll from 'react-scroll';
 
 const Skills = () => {
+    const Link = Scroll.Link;
+
     return (
         <Element id="skills" className={classes.parent}>
             <Container fluid className={classes.skills}>
@@ -16,7 +20,15 @@ const Skills = () => {
                     <h4>Bootstrap is an open-source front-end library with HTML and CSS based designs. This website is built with HTML5, CSS3 and Bootstrap</h4>
                 </Row>
                 <Row className={classes.button}>
-                    <Button variant="primary" style={{width: "125px"}}>See Portfolio</Button>
+                    <Nav.Link>
+                        <Link
+                            to="portfolio"
+                            spy={true} 
+                            smooth={true} 
+                            duration={100}>
+                            <Button variant="primary" style={{width: "125px"}}>See Portfolio</Button>
+                        </Link>
+                    </Nav.Link>
                 </Row>
             </Container>
 

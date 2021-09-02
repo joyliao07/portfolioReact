@@ -1,5 +1,6 @@
 import Nav from 'react-bootstrap/Nav'
 import Scroll from 'react-scroll';
+import classes from './NavLink.module.css';
 
 const NavLink = props => {
     const Link = Scroll.Link;
@@ -9,7 +10,7 @@ const NavLink = props => {
     }
 
     return(
-            <Nav.Link>
+            <Nav.Link className={classes.links}>
                 <Link
                     to={props.dest} 
                     spy={true} 

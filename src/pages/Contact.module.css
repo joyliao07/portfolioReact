@@ -1,6 +1,7 @@
 .parent {
     background: rgb(227, 227, 228);
-    padding-top: 100px
+    padding-top: 100px;
+    height: 100%;
 }
 
 .info {
@@ -22,6 +23,7 @@
 .email input {
     margin-top: 5px;
     width: 400px;
+    outline: rgb(89, 88, 88) solid 2px;
 }
 
 .message textarea {
@@ -29,6 +31,7 @@
     width: 400px;
     height: 250px;
     resize: none;
+    outline: rgb(89, 88, 88) solid 2px;
 }
 
 /* Desktop view: */

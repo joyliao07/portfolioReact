@@ -20,7 +20,15 @@ const NavBar = () => {
             <Navbar bg="light" expand="lg" fixed="top" 
                     expanded={ navExpanded } >
                 <Container fluid>
-                    <Navbar.Brand href="#home">Joyce Liao</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                        <img
+                            src="/joy.png"
+                            width="45"
+                            height="45"
+                            className="d-inline-block align-top"
+                            alt="React Bootstrap logo"/>
+                        Joyce Liao
+                    </Navbar.Brand>
                     <Navbar.Toggle  aria-controls="basic-navbar-nav" 
                                     onClick={ navExpandHandler }/>
                     <Navbar.Collapse id="basic-navbar-nav">
