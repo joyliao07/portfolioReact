@@ -1,39 +1,63 @@
 .parent {
     margin: 0;
     padding: 0;
+
 }
 
-.skills {
-    height: 300px;
-    background: rgb(235, 243, 245);
+/* Upper half: */
+.introContainer {
+    padding-top: 8%; /* color area above banner */
+    padding-bottom: 3%; 
+    background: rgb(192, 215, 223);
 }
 
-.title {
-    height: 50%;
-    padding-top: 5%;
+.banner {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: rgb(92, 92, 92);
 }
 
-.banner, .button {
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.description {
+    margin: 2.5% 8% 2% 8%;
     text-align: center;
 }
 
-.headingUnderline {
-    width: 3rem;
-    height: .2rem;
-    background-color: #1e91bb;
-    margin: 0 auto 2rem;
+.buttonRow {
+    text-align: center;
 }
 
+.button {
+    height: 60px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(67, 67, 67);
+    background-color: rgb(122, 221, 228);
+    border: solid 3px rgb(122, 221, 228);
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: rgb(38, 182, 198);
+    font-size: 22px;
+    color: white;
+    border: none;
+}
+
+/* Lower half: */
+
+.skillsContainer {
+    margin: 0% 12%;
+}
+
+.skillsContainer h1 {
+    color: rgb(67, 67, 67);
+    margin-top: 10px;
+}
 
 .skillBlock {
+    border: solid red 2px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -42,18 +66,17 @@
     text-align: center;
 }
 
-.base {
-    height: 75px;
-}
+/* Icons: */
+
+
 
 
 /* Desktop view: */
-@media (min-width: 767.98px) {
-    .skills {
-        height: 350px;
+@media (min-width: 900px) {
+    .parent {
+        height: 100vh;
+
     }
 
-    .base {
-        height: 150px;
-    }
+
 }

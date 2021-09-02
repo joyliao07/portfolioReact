@@ -11,8 +11,6 @@ const Home = () => {
     return (
         <Element id="home" className={classes.parent}>
             <div  className={classes.landing}>
-                <div className={classes.inner}>
-                </div>
             </div>
             <div className={classes.content}>
                 <div  className={classes.title}>

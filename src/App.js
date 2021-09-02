@@ -8,10 +8,10 @@ import Volunteer from './pages/Volunteer';
 import Contact from './pages/Contact';
 import classes from './App.module.css';
 
-
 function App() {
+
   return (
-    <Container fluid style={{"min-width": "600px"}} className={classes.app}>
+    <Container fluid className={classes.app}>
       <Row style={{height: "55px"}}>
           <NavBar></NavBar>
       </Row>

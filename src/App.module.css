@@ -1,3 +1,4 @@
 .app {
   font-family: 'Roboto Mono', monospace;
+  min-width: 600px;
 }
