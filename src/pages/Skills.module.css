@@ -1,7 +1,6 @@
 .parent {
     margin: 0;
     padding: 0;
-
 }
 
 /* Upper half: */
@@ -12,6 +11,7 @@
 }
 
 .banner {
+    margin-top: 9%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
 
 .button {
     height: 60px;
-    width: 150px;
+    width: 230px;
     font-size: 20px;
     color: rgb(67, 67, 67);
     background-color: rgb(122, 221, 228);
@@ -39,10 +39,11 @@
 }
 
 .button:hover {
-    background-color: rgb(38, 182, 198);
-    font-size: 22px;
+    background-color: rgb(41, 197, 214);
+    border: solid 7px rgb(184, 237, 243);
+    font-size: 21px;
     color: white;
-    border: none;
+    transition: all .6s ease;
 }
 
 /* Lower half: */
@@ -52,12 +53,13 @@
 }
 
 .skillsContainer h1 {
-    color: rgb(67, 67, 67);
+    color: rgb(75, 75, 75);
     margin-top: 10px;
 }
 
 .skillBlock {
-    border: solid red 2px;
+
+    border: solid none 5px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -72,11 +74,12 @@
 
 
 /* Desktop view: */
-@media (min-width: 900px) {
+@media (min-width: 990px) { /* 990px for columns' breakpoint */
     .parent {
         height: 100vh;
-
     }
 
-
+    .banner {
+        margin-top: 0;
+    }
 }

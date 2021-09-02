@@ -1,5 +1,11 @@
 .parent {
+    padding-top: 15%;
     background: rgb(192, 215, 223);
+}
+
+.outerContainer {
+    border: solid 1px purple;
+    margin-top: 10%;
 }
 
 .base {
@@ -9,6 +15,11 @@
 
 /* Desktop view: */
 @media (min-width: 767.98px) {
+    .parent {
+        padding-top: 0;
+        height: 100vh;
+    }
+
     .base {
         height: 300px;
     }
