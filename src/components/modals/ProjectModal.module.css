@@ -1,0 +1,42 @@
+.screen {
+    background: rgb(89, 88, 88, 0.85);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectBox h4 {
+    padding-bottom: 9%;
+}
+
+.projectBox {
+    background: rgb(252, 248, 241);
+    position: fixed;
+    z-index: 2;
+    width: 450px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 5% 6%;
+    border: 5px solid #888;
+    border-radius: 25px;
+}
+
+/* Desktop view: */
+@media (min-width: 990px) {
+    .projectBox {
+        width: 30%;
+        padding: 5% 3%;
+    }
+}
