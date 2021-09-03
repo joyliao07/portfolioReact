@@ -4,7 +4,6 @@
 }
 
 .outerContainer {
-    border: solid 1px purple;
     margin-top: 10%;
 }
 
@@ -14,7 +13,7 @@
 
 
 /* Desktop view: */
-@media (min-width: 767.98px) {
+@media (min-width: 990px) {
     .parent {
         padding-top: 0;
         height: 100vh;

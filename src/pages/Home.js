@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import classes from './Home.module.css';
 import { Element } from 'react-scroll';
 import Nav from 'react-bootstrap/Nav'

@@ -16,7 +16,7 @@ const Contact = () => {
     const Link = Scroll.Link;
     const [senderEmail, updateSenderEmail] = useState(' ');
     const [feedback, updateFeedback] = useState(' ');
-    const [modal, setModal] = useState(false);
+    const [modal, setModal] = useState(true);
 
     const handleSubmit = (event) => {
         event.preventDefault();
