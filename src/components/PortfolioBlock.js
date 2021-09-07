@@ -17,12 +17,14 @@ const PortfolioBlock = (props) => {
         const params = {
             name: props.name,
             tech: props.tech,
-            story: props.story
+            story: props.story,
+            git: props.git,
+            deploy: props.deploy
         };
         props.open(params);
     }
 
-    const block = <Col    className={classes.portfolioBlock} md={6} lg={3} 
+    const block = <Col  className={classes.portfolioBlock} md={6} lg={3} 
                         style={blockStyle(hover)}
                         onPointerOver={() => setHover(true)}
                         onPointerOut={() => setHover(false)}

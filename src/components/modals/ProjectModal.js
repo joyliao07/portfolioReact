@@ -1,9 +1,23 @@
-import Button from 'react-bootstrap/Button';
 import classes from './ProjectModal.module.css';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectModal = (props) => {
     const closeHandler = () => {
         props.close();
+    }
+
+    let deployLink =                     
+        <div className={classes.deploy}>
+            <div className={classes.linkIcon}>
+                <FaExternalLinkAlt size="sm" color="rgba(68, 67, 67, 0.85)"/>
+            </div>
+            <a  href={props.deploy} 
+                target="_blank" 
+                rel="noreferrer">Visit Website</a>
+        </div>;
+
+    if (props.deploy === "") {
+        deployLink = <></>;
     }
 
     return(
@@ -12,7 +26,19 @@ const ProjectModal = (props) => {
                 <h4>{props.name}</h4>
                 <h5>{props.tech}</h5>
                 <p>{props.story}</p>
-                <Button variant="light" onClick={closeHandler}>Close</Button>{' '}
+                <div className={classes.gitBox}>
+                    <div className={classes.gitIcon}>
+                        <FaGithub size="sm" color="rgba(68, 67, 67, 0.85)"/>
+                    </div>
+                    <div className={classes.gitLink}>
+                        <a  href={props.git} 
+                            target="_blank" 
+                            rel="noreferrer">{props.git}</a>
+                    </div>
+                </div>
+                {deployLink}
+                <button className={classes.button} 
+                        onClick={closeHandler}>Close</button>
             </div>
         </div>
     );

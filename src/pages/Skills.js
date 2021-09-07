@@ -5,7 +5,6 @@ import classes from './Skills.module.css';
 import { Element } from 'react-scroll';
 import Nav from 'react-bootstrap/Nav'
 import Scroll from 'react-scroll';
-
 import { FaNodeJs, FaPython, FaLaptopCode, FaRegFileCode, FaReact, FaMicrosoft } from 'react-icons/fa';
 
 const Skills = () => {
