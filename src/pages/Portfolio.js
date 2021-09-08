@@ -17,7 +17,7 @@ const projectDetails = [
     color: "(223, 218, 187)",
     colorHover: "(206, 202, 174)"},
     {name: "React Portfolio", 
-    tech:"ReactJS. CSS Modules. Bootstrap4. Animation", 
+    tech:"ReactJS. CSS Modules. Bootstrap5", 
     story: "",
     git:"https://github.com/joyliao07/portfolioReact",
     deploy:"",

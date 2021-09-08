@@ -7,6 +7,6 @@
 /* Desktop view: */
 @media (min-width: 767.98px) {
     .parent {
-        height: 1080px;
+        height: 100vh;
     }
 }

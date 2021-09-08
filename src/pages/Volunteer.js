@@ -1,23 +1,50 @@
 import classes from './Volunteer.module.css';
 import Container from 'react-bootstrap/Container';
 import SectionBanner from '../components/SectionBanner';
-import PortfolioBlock from '../components/PortfolioBlock';
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Element } from 'react-scroll';
+import useWindowDimensions from '../components/useWindowDimensions';
+import VolunteerBlock from '../components/VolunteerBlock';
+
+const volunteer = [
+    {   name: "OrcaSound",
+        tech: "python",
+        story: "orca sound is cool..."},
+    {   name: "Humanity Forward",
+        tech: "python",
+        story: "Humanity Forward is cool..."},
+    {   name: "DemocracyLab",
+        tech: "python",
+        story: "DemocracyLab is cool..."},
+    {   name: "AccessibilityApp",
+        tech: "python",
+        story: "AccessibilityApp is cool..."},
+];
 
 const Volunteer = () => {
+    const width = useWindowDimensions();
+    let itemNumber = 3;
+
+    if (width < 1200) {
+        itemNumber = 2;
+    }
+
+    let carousel =  <OwlCarousel items={itemNumber} className="owl-theme" loop nav margin={8}>
+                        {volunteer.map(project => {
+                           return  <VolunteerBlock 
+                                        name={project.name} 
+                                        tech={project.tech}
+                                        story={project.story}/>
+                        })}
+                    </OwlCarousel>;
+
     return (
         <Element id="volunteer" className={classes.parent}>
             <Container fluid>
                 <SectionBanner section="Volunteer"/>
-                <OwlCarousel items={3} className="owl-theme" loop nav margin={8}>
-                    <PortfolioBlock name="Temp-1" tech="React JS, ASP.NET"/>
-                    <PortfolioBlock name="Temp-2" tech="React JS"/>
-                    <PortfolioBlock name="Temp-3" tech="Python3, Google Vision"/>
-                    <PortfolioBlock name="Temp-4" tech="Angular9, TypeScript"/>
-                </OwlCarousel>
+                {carousel}
             </Container>
         </Element>
     );

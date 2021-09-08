@@ -1,0 +1,12 @@
+.projectBox {
+    margin-top: 20%;
+    border: solid blue 1px;
+    height: 500px;
+}
+
+.pix {
+    height: 55%;
+    
+    background-position: center;
+    background-size: cover;
+}
