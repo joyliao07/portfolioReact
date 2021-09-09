@@ -1,16 +1,15 @@
 .orcasound {
     background-image: url('../assets/orca.jpg');
-    color: rgb(128, 121, 121);
 }
 
 .humanityforward {
-
+    background-image: url('../assets/humanity.jpg');
 }
 
 .democracylab {
-
+    background-image: url('../assets/democracy.jpg');
 }
 
 .accessibilityapp {
-
+    background-image: url('../assets/accessibility.jpg');
 }

@@ -18,7 +18,7 @@
 }
 
 .messageBox {
-    background: rgb(249, 241, 229);
+    background: rgb(250, 246, 239);
     position: fixed;
     z-index: 2;
     width: 450px;

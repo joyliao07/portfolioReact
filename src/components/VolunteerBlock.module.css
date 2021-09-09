@@ -1,12 +1,45 @@
 .projectBox {
-    margin-top: 20%;
-    border: solid blue 1px;
-    height: 500px;
+    margin-top: 5%;
+    background: rgb(247, 247, 233);
+    height: 600px;
 }
 
 .pix {
     height: 55%;
-    
     background-position: center;
     background-size: cover;
 }
+
+
+/* Still 1 column: */
+@media (min-width: 760px) {
+    .projectBox {
+        margin-top: 0%;
+    }
+}
+
+/* Still 1 column: */
+@media (min-width: 800px) {
+    .projectBox {
+        margin-top: 0%;
+    }
+}
+
+/* 2 columns: */
+@media (min-width: 901px) {
+    .projectBox {
+        margin-top: 0%;
+    }
+}
+
+/* 3 columns: */
+@media (min-width: 1200px) {
+    .projectBox {
+        margin-top: 5%;
+    }
+}
+
+
+
+
+

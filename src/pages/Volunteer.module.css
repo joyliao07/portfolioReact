@@ -1,12 +1,57 @@
 .parent {
-    height: 900px;
+    height: 1000px;
     background: rgb(195, 226, 245);
 }
 
+.carouselOuterContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5%;
+}
 
-/* Desktop view: */
-@media (min-width: 767.98px) {
+.carouselInnerContainer {
+    width: 90%;
+    max-width: 580px;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Still 1 column: */
+@media (min-width: 760px) {
+    .parent {
+        height: 1000px;
+    }
+    .carouselOuterContainer {
+        padding-top: 0%;
+    }
+}
+
+/* Still 1 column: */
+@media (min-width: 800px) {
+    .carouselInnerContainer {
+        width: auto;
+    }
+}
+
+/* 2 columns: */
+@media (min-width: 901px) {
     .parent {
         height: 100vh;
+    }
+    .carouselInnerContainer {
+        width: auto;
+        max-width: 1600px;
+    }
+}
+
+/* 3 columns: */
+@media (min-width: 1200px) {
+    .carouselInnerContainer {
+        max-width: 1300px; 
     }
 }

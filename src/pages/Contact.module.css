@@ -1,7 +1,10 @@
 .parent {
+    z-index: 2;
     background: rgb(227, 227, 228);
     padding-top: 100px;
     height: 100%;
+    background-image: url('../assets/contact.jpg');
+    background-size: cover;
 }
 
 .info {
@@ -22,20 +25,30 @@
 
 .email input {
     margin-top: 5px;
-    width: 400px;
-    outline: rgb(89, 88, 88) solid 2px;
+    width: 90%;
+    min-width: 425px;
+    outline: rgb(89, 88, 88) solid 2px; 
+}
+
+.email input:focus {
+    background-color: rgb(249, 246, 223);
 }
 
 .message textarea {
     margin-top: 5px;
-    width: 400px;
+    width: 90%;
+    min-width: 425px;
     height: 250px;
     resize: none;
     outline: rgb(89, 88, 88) solid 2px;
 }
 
+.message textarea:focus {
+    background-color: rgb(249, 246, 223);
+}
+
 /* Desktop view: */
-@media (min-width: 767.98px) {
+@media (min-width: 992px) {
     .info {
         padding: 60px;
         padding-top: 170px;
@@ -45,5 +58,15 @@
     .form {
         padding-top: 100px;
         height: 750px;
+    }
+
+    .email input {
+        min-width: 400px;
+        max-width: 800px;
+    }
+    
+    .message textarea {
+        min-width: 400px;
+        max-width: 800px;
     }
 }

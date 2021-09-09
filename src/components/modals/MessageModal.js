@@ -9,7 +9,7 @@ const MessageModal = (props) => {
     return(
         <div className={classes.screen} onClick={closeHandler}>
             <div className={classes.messageBox}>
-                <h4>Thank you for reaching out. I will respond to your message as soon as I can.</h4>
+                <h4>Thank you for reaching out. Your message will be responded within 24 hours.</h4>
                 <Button variant="light" onClick={closeHandler}>Close</Button>{' '}
             </div>
         </div>

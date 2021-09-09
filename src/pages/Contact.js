@@ -37,7 +37,7 @@ const Contact = () => {
               receiverEmail,
               feedback,
             },
-            "to activate, change to user"
+            "to activate, put user"
           )
           .then(res => {
             if (res.status === 200) {
@@ -72,15 +72,15 @@ const Contact = () => {
             <Container fluid>
                 <SectionBanner section="Contact Me"/>
                 <Row>
-                    <Col className={classes.info} md={6} sm={12}>
-                        <h5>Please email me to discuss coding or simply getting to know each other. I look forward to hearing from you!</h5>
-                        <h>Please allow 24 hours for response.</h>
+                    <Col className={classes.info} lg={6} md={12} sm={12}>
+                        <h5>You're welcome to message me to discuss coding or simply getting to know each other. I look forward to hearing from you!</h5>
+                        <p>Please allow 24-hour response time.</p>
                     </Col>
-                    <Col  className={classes.form} md={6} sm={12}>
+                    <Col  className={classes.form} lg={6} md={12} sm={12}>
                         <form onSubmit={handleSubmit}>
                             <div className={`mb-3 ${classes.email}`}>
                                 <div>
-                                    <label>Email address</label>
+                                    <label>Your Email</label>
                                 </div>
                                 <input 
                                     type="text" 
