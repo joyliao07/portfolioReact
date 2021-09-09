@@ -3,11 +3,11 @@
     padding: 0;
 }
 
-/* Upper half: */
+/* Upper half:  background: rgb(192, 215, 223);*/
 .introContainer {
     padding-top: 8%; /* color area above banner */
     padding-bottom: 3%; 
-    background: rgb(192, 215, 223);
+    background: #f2f1f1;
 }
 
 .banner {

@@ -27,7 +27,9 @@
     margin-top: 5px;
     width: 90%;
     min-width: 425px;
-    outline: rgb(89, 88, 88) solid 2px; 
+    border: none;
+    border: rgb(89, 88, 88) solid 3px;
+    border-radius: 7px;
 }
 
 .email input:focus {
@@ -40,11 +42,13 @@
     min-width: 425px;
     height: 250px;
     resize: none;
-    outline: rgb(89, 88, 88) solid 2px;
+    border: none;
+    border: rgb(89, 88, 88) solid 3px;
+    border-radius: 7px;
 }
 
 .message textarea:focus {
-    background-color: rgb(249, 246, 223);
+    background-color: rgb(250, 249, 236);
 }
 
 /* Desktop view: */
