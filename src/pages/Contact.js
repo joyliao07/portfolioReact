@@ -37,7 +37,7 @@ const Contact = () => {
               receiverEmail,
               feedback,
             },
-            "to activate, put user"
+            user
           )
           .then(res => {
             if (res.status === 200) {
