@@ -2,7 +2,7 @@
     z-index: 2;
     background: rgb(227, 227, 228);
     padding-top: 100px;
-    height: 100%;
+    height: 1250px;
     background-image: url('../assets/contact.jpg');
     background-size: cover;
 }
@@ -36,6 +36,10 @@
     background-color: rgb(249, 246, 223);
 }
 
+.warning {
+    color: red;
+}
+
 .message textarea {
     margin-top: 5px;
     width: 90%;
@@ -51,8 +55,40 @@
     background-color: rgb(250, 249, 236);
 }
 
+.upButtonContainer {
+    position: relative;
+    float: right;
+}
+
+@keyframes bounce {
+    from { 
+      transform: translateY(0) scale(1);
+    }
+    to   { 
+      transform: translateY(25px) scale(1, 0.7);
+    }
+}
+.upButton {
+    float: right;
+    width: 30px;
+    color:rgb(78, 77, 77);
+
+    position: absolute;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    animation-iteration-count: infinite;
+}
+
 /* Desktop view: */
 @media (min-width: 992px) {
+    .parent {
+        padding-top: 0;
+        min-height: 1050px;
+        height: 100vh;
+    }
+
     .info {
         padding: 60px;
         padding-top: 170px;
@@ -72,5 +108,12 @@
     .message textarea {
         min-width: 400px;
         max-width: 800px;
+    }
+}
+
+@media (min-height: 1200px) {  
+    .lastRow {
+        height: 280px;
+        padding-top: 12%;
     }
 }

@@ -4,7 +4,6 @@ import classNames from 'classnames';
 
 const VolunteerBlock = (props) => {
     const myClass = props.name.toLowerCase().replace(/\s/g,'');
-    console.log(myClass);
     let pixClasses = classNames(classes.pix, myClass);
 
     return(

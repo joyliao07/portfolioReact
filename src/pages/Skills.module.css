@@ -35,15 +35,15 @@
     color: rgb(67, 67, 67);
     background-color: rgb(122, 221, 228);
     border: solid 3px rgb(122, 221, 228);
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .button:hover {
-    background-color: rgb(41, 197, 214);
-    border: solid 7px rgb(184, 237, 243);
+    background-color: white;
+    border: solid 3px rgb(23, 146, 160); 
     font-size: 21px;
-    color: white;
-    transition: all .6s ease;
+    color:rgb(23, 146, 160);
+    transition: all .1s ease;
 }
 
 /* Lower half: */
@@ -75,6 +75,7 @@
 /* Desktop view: */
 @media (min-width: 990px) { /* 990px for columns' breakpoint */
     .parent {
+        min-height: 1100px;
         height: 100vh;
     }
 
