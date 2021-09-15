@@ -8,12 +8,12 @@
     height: 920px;
 }
 
-/* Background image: */
+/* Background image: background-repeat: repeat-y;*/
 .landing {
     background-image: url('../assets/coding.jpg');
-    background-repeat: repeat-y;
     position: fixed;
     height: 125%;
+    min-width: 1024px;
     width: 120%;
     background-size: cover;
     background-position: center center;
