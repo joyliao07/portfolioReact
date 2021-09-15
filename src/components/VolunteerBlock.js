@@ -9,10 +9,12 @@ const VolunteerBlock = (props) => {
     return(
         <div className={classes.projectBox}>
             <div className={pixClasses}></div>
-            <h2>{props.name}</h2>
-            <p>{props.time}</p>
-            <h4>{props.tech}</h4>
-            <p>{props.story}</p>
+            <div className={classes.description}>
+                <h2>{props.name}</h2>
+                <p>{props.time}</p>
+                <h4>{props.tech}</h4>
+                <p>{props.story}</p>
+            </div>
         </div>
     );
 }

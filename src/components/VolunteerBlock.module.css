@@ -1,13 +1,19 @@
 .projectBox {
     margin-top: 5%;
     background: rgb(248, 246, 242);
-    height: 680px;
+    height: 650px;
+    
 }
 
 .pix {
-    height: 55%;
+    height: 350px;
     background-position: center;
     background-size: cover;
+}
+
+.description {
+    height: 300px;
+    overflow: auto;
 }
 
 
