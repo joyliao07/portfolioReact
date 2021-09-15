@@ -24,7 +24,8 @@ const Home = () => {
                             to="skills"
                             spy={true} 
                             smooth={true} 
-                            duration={100}>
+                            duration={100}
+                            className={classes.buttonLink}>
                             <div className={classes.button}>Enter</div>
                         </Link>
                     </Nav.Link>

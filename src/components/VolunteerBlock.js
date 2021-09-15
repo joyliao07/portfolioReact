@@ -11,7 +11,7 @@ const VolunteerBlock = (props) => {
             <div className={pixClasses}></div>
             <h2>{props.name}</h2>
             <p>{props.time}</p>
-            <h5>{props.tech}</h5>
+            <h4>{props.tech}</h4>
             <p>{props.story}</p>
         </div>
     );

@@ -29,7 +29,7 @@ const PortfolioBlock = (props) => {
                         onPointerOver={() => setHover(true)}
                         onPointerOut={() => setHover(false)}
                         onClick={modalOpenHandler}>
-                    <div style={{height:"70px"}}>
+                    <div>
                         <h3>{props.name}</h3>
                     </div>
                     <div>
