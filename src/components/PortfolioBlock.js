@@ -9,7 +9,7 @@ const PortfolioBlock = (props) => {
     const blockStyle = (hover) => { 
         return ({
             backgroundColor:  hover? "rgb" + props.colorHover: "rgb" + props.color,
-            transition: "all .2s ease",
+            transition: "all .4s ease",
         });
     }
 
