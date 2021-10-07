@@ -24,7 +24,7 @@ const projectDetails = [
     tech:"Angular9. TypeScript. NodeJS. AirVisual API", 
     story:"AirQuality allows users to check the degrees of air pollution in cities worldwide, in real time, by reading the “aqius” index. Users can request new cities to be added to the website by filling out the contact form.",
     git:"https://github.com/joyliao07/airQuality ",
-    deploy:"",
+    deploy:"https://airquality-app-ea704.web.app/",
     color: "(91,192,222)",
     colorHover: "(60, 164, 196)"},
     {name: "Raspberry Garden", 
