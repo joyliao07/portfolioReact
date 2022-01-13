@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Portfolio is built with ReactJs and contains simple animation effects. It showcases my tech stacks, projects, and volunteer experience.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Please visit deployed website https://jl-portfolio-react.herokuapp.com/.
