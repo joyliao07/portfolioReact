@@ -25,6 +25,7 @@
 
 .projectBox p {
     padding-bottom: 1%;
+    font-size: 0.9em;
 }
 
 .projectBox {
@@ -67,6 +68,10 @@
     overflow-wrap: anywhere;
 }
 
+.gitLink p {
+    font-size: 0.8em;
+}
+
 .deploy {
     display: flex;
     margin-top: 20px;
@@ -76,6 +81,7 @@
 .deploy a {
     text-decoration: none;
     color: darkblue;
+    font-size: 0.9em;
 }
 
 .button {

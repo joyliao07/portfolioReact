@@ -33,7 +33,7 @@ const ProjectModal = (props) => {
                     <div className={classes.gitLink}>
                         <a  href={props.git} 
                             target="_blank" 
-                            rel="noreferrer">{props.git}</a>
+                            rel="noreferrer"><p>{props.git}</p></a>
                     </div>
                 </div>
                 {deployLink}

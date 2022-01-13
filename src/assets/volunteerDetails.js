@@ -1,6 +1,6 @@
 const volunteerDetails = [
     {   name: "OrcaSound",
-        time: "2021",
+        time: "2021-2022",
         tech: "Python.RaspberryPi.Docker",
         story: "OrcaSound installs RaspberryPi in the ocean to track Orca whales’ sounds and movement. The data is sent to marine biologists and the US Ocean Observatories Initiative to preserve Orca and other marine species."},
     {   name: "HumanityForward",

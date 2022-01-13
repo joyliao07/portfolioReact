@@ -64,28 +64,29 @@ code {
 }
 
 h1 {
-  	font-size: 45px;
+  	font-size: 37px;
   	margin-bottom: 10px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 22px;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 20px;
+
 }
 
 h4 {
-  	font-size: 20px;
-	  margin-top: 2%;
-	  margin-bottom: 2%;
+  	font-size: 12px;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 10px;
 }
 
 p {
