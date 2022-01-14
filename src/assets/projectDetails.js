@@ -3,7 +3,7 @@ const projectDetails = [
     tech:".Net5. React (Typescript)",
     story:"BookFinder App allows the users to login and search books with a keyword, using Google-Books API. The users can add or remove books from their personal bookshelves, mark favorites, update reading status, and make notes on each book.",
     git:"https://github.com/joyliao07/jb-jl-booklist ",
-    deploy:"https://bookfinder-react-dotnet.herokuapp.com/",
+    deploy:"",
     color: "(223, 218, 187)",
     colorHover: "(206, 202, 174)"},
     {name: "Portfolio", 
