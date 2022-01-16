@@ -91,6 +91,7 @@
     border-radius: 12%;
     height: 40px;
     width: 80px;
+    font-size: 13px;
 }
 
 .button:hover {

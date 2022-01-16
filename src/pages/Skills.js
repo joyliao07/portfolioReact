@@ -40,7 +40,7 @@ const Skills = () => {
                                 <FaMicrosoft size="sm"/>
                             </div>
                         </div>
-                        <h1>ASP.NET</h1>
+                        <h2>ASP.NET</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
@@ -48,7 +48,7 @@ const Skills = () => {
                                 <FaReact size="sm"/>
                             </div>
                         </div>
-                        <h1>REACT</h1>
+                        <h2>REACT</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
@@ -56,7 +56,7 @@ const Skills = () => {
                                 <FaRegFileCode size="sm"/>
                             </div>
                         </div>
-                        <h1>HTML.CSS</h1>
+                        <h2>HTML.CSS</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
@@ -64,7 +64,7 @@ const Skills = () => {
                                 <FaPython size="sm"/>
                             </div>
                         </div>
-                        <h1>PYTHON</h1>
+                        <h2>PYTHON</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div>
@@ -72,7 +72,7 @@ const Skills = () => {
                                 <FaNodeJs size="sm"/>
                             </div>
                         </div>
-                        <h1>NODE JS</h1>
+                        <h2>NODE JS</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px", "padding-top": "10px"}}>
@@ -80,7 +80,7 @@ const Skills = () => {
                                 <FaLaptopCode size="lg"/>
                             </div>
                         </div>
-                        <h1>C#</h1>
+                        <h2>C#</h2>
                     </Col>
                 </Row>
             </Container>

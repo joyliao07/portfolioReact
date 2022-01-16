@@ -143,7 +143,7 @@ const Contact = () => {
                 </Row>
                 <Row className={classes.lastRow}>
                     <Col>
-                        <p><strong>&copy;JoyceLiao2021</strong></p>
+                        <p><strong>&copy;JoyceLiao2022</strong></p>
                     </Col>
                     <Col>
                         <Nav.Link className={classes.upButtonContainer}>
