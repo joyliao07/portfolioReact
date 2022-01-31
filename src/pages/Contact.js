@@ -106,8 +106,18 @@ const Contact = () => {
                 <SectionBanner section="Contact Me"/>
                 <Row>
                     <Col className={classes.info} lg={6} md={12}>
-                        <h5>You're welcome to message me to discuss coding or simply getting to know each other. I look forward to your feedback!</h5>
+                        <p>Please message me to discuss coding or simply get to know each other. I look forward to hearing from you!</p>
                         <p>Please allow 24-hour response time.</p>
+                        <p>GitHub:  
+                            <a href="https://github.com/joyliao07" target="_blank">
+                                www.github.com/joyliao07 
+                            </a>
+                        </p>
+                        <p>LinkedIn: 
+                            <a href="https://www.linkedin.com/in/joyceliao-seattle" target="_blank">
+                                www.linkedin.com/in/joyceliao-seattle 
+                            </a>
+                        </p>
                     </Col>
                     <Col  className={classes.form} lg={6} md={12}>
                         <form onSubmit={handleSubmit}>
