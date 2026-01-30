@@ -19,16 +19,15 @@ const Home = () => {
                     <p>SOFTWARE DEVELOPER</p>
                 </div>
                 <div >
-                    <Nav.Link className={classes.buttonContainer}>
-                        <Link
-                            to="skills"
-                            spy={true} 
-                            smooth={true} 
-                            duration={100}
-                            className={classes.buttonLink}>
-                            <div className={classes.button}>Enter</div>
-                        </Link>
-                    </Nav.Link>
+                <Nav.Link 
+                    as={Link}
+                    className={classes.buttonContainer} 
+                    to="skills"
+                    spy={true} 
+                    smooth={true} 
+                    duration={100}>
+                    <div className={classes.button}>Enter</div>
+                </Nav.Link>
                 </div>
             </div>
         </Element>

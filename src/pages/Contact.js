@@ -164,8 +164,7 @@ const Contact = () => {
                         to="home"
                         spy={true} 
                         smooth={true}
-                        duration={200}
-                    >
+                        duration={200}>
                         <span className={classes.upButton}>
                             <FaRegArrowAltCircleUp size="lg"/>
                         </span>
