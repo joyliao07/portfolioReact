@@ -47,7 +47,7 @@ const Skills = () => {
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
                             <div style={{width: "45px"}}>
-                                <FaMicrosoft size="sm"/>
+                                <FaMicrosoft size={55}/>
                             </div>
                         </div>
                         <h2>ASP.NET</h2>
@@ -55,7 +55,7 @@ const Skills = () => {
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
                             <div style={{width: "60px"}}>
-                                <FaReact size="sm"/>
+                                <FaReact size={55}/>
                             </div>
                         </div>
                         <h2>REACT</h2>
@@ -63,7 +63,7 @@ const Skills = () => {
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
                             <div style={{width: "38px"}}>
-                                <FaRegFileCode size="sm"/>
+                                <FaRegFileCode size={55}/>
                             </div>
                         </div>
                         <h2>HTML.CSS</h2>
@@ -71,7 +71,7 @@ const Skills = () => {
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div style={{height: "60px"}}>
                             <div style={{width: "50px"}}>
-                                <FaPython size="sm"/>
+                                <FaPython size={55}/>
                             </div>
                         </div>
                         <h2>PYTHON</h2>
@@ -79,15 +79,15 @@ const Skills = () => {
                     <Col className={classes.skillBlock} md={6} lg={4}>
                         <div>
                             <div style={{width: "50px"}}>
-                                <FaNodeJs size="sm"/>
+                                <FaNodeJs size={55}/>
                             </div>
                         </div>
                         <h2>NODE JS</h2>
                     </Col>
                     <Col className={classes.skillBlock} md={6} lg={4}>
-                        <div style={{height: "60px", "padding-top": "10px"}}>
+                        <div style={{height: "60px", "paddingTop": "10px"}}>
                             <div style={{width: "65px"}}>
-                                <FaLaptopCode size="lg"/>
+                                <FaLaptopCode size={57}/>
                             </div>
                         </div>
                         <h2>C#</h2>

@@ -161,12 +161,13 @@ const Contact = () => {
                     <Nav.Link 
                         as={Link}
                         className={classes.upButtonContainer}
+                        style={{ right: '50px', bottom: '50px' }} 
                         to="home"
                         spy={true} 
                         smooth={true}
                         duration={200}>
                         <span className={classes.upButton}>
-                            <FaRegArrowAltCircleUp size="lg"/>
+                            <FaRegArrowAltCircleUp size={55}/>
                         </span>
                     </Nav.Link>
                     </Col>

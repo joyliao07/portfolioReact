@@ -46,6 +46,7 @@ const Portfolio = () => {
                 <Row className={classes.outerContainer}>
                     {projectDetails.map( project => {
                         return <PortfolioBlock 
+                                    key={project.name}
                                     name={project.name} 
                                     tech={project.tech} 
                                     story={project.story}

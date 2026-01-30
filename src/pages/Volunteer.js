@@ -26,6 +26,7 @@ const Volunteer = () => {
                                     loop nav margin={8}>
                         {volunteerDetails.map(project => {
                            return  <VolunteerBlock 
+                                        key={project.name}
                                         name={project.name}
                                         time={project.time} 
                                         tech={project.tech}

@@ -17,7 +17,7 @@ const NavBar = () => {
 
     return(
         <div>
-            <Navbar bg="light" expand="lg" fixed="top" 
+            <Navbar bg="light" expand={30} fixed="top" 
                     expanded={ navExpanded } >
                 <Container fluid>
                     <Navbar.Brand href="#home">
