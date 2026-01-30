@@ -27,7 +27,7 @@ const NavBar = () => {
                             height="45"
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"/>
-                        Joyce Liao
+                        Joyce Chen
                     </Navbar.Brand>
                     <Navbar.Toggle  aria-controls="basic-navbar-nav" 
                                     onClick={ navExpandHandler }/>

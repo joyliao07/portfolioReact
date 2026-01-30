@@ -14,7 +14,7 @@ const Skills = () => {
         <Element id="skills" className={classes.parent}>
             <Container fluid className={classes.introContainer}>
                 <Row className={classes.banner}>
-                    <h1>Developement Experience</h1>
+                    <h1>Professional Summary</h1>
                 </Row>
                 <Row className={classes.description}>
                 <h4 style={{ lineHeight: '1.6', marginTop: '10px' }}>

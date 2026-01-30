@@ -13,10 +13,10 @@ const Home = () => {
             </div>
             <div className={classes.content}>
                 <div  className={classes.title}>
-                    <p>JOYCE LIAO</p>
+                    <p>JOYCE CHEN</p>
                 </div>
                 <div className={classes.subTitle}>
-                    <p>SOFTWARE DEVELOPER</p>
+                    <p>SOFTWARE ENGINEER</p>
                 </div>
                 <div >
                 <Nav.Link 
