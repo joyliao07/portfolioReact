@@ -13,7 +13,6 @@ import Scroll from 'react-scroll';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 
 const Contact = () => {
-    require('dotenv').config();
     const Link = Scroll.Link;
     const [senderEmail, updateSenderEmail] = useState(' ');
     const [feedback, updateFeedback] = useState(' ');
@@ -25,27 +24,29 @@ const Contact = () => {
         event.preventDefault();
         // Validate email and message:
         if (validateEmail(senderEmail) && validateMessage(feedback)) {
-            const receiverEmail = process.env.REACT_APP_emailjsReceiver;
             const templateId = process.env.REACT_APP_emailjsTemplateId;
-            const user = process.env.REACT_APP_emailjsUserId;
-            sendFeedback({templateId, senderEmail, receiverEmail, feedback, user});
+            const publicKey = process.env.REACT_APP_emailjsPublicKey;
+            sendFeedback({templateId, senderEmail, feedback, publicKey});
             setModal(true);
         } else {
             return;
         }
     }
 
-    const sendFeedback = ({templateId, senderEmail, receiverEmail, feedback, user}) => {
+    const sendFeedback = ({templateId, senderEmail, feedback, publicKey}) => {
+        const serviceId = process.env.REACT_APP_emailjsServiceId;
+
         emailjs
           .send(
-            "service_0t9puc1",
+            serviceId,
             templateId,
             {
-              senderEmail,
-              receiverEmail,
-              feedback,
+              title: `[React Portfolio] New Message From ${senderEmail}`,
+              name: senderEmail,
+              message: feedback,
+              email: senderEmail,
             },
-            "to activate, put user"
+            publicKey
           )
           .then(res => {
             if (res.status === 200) {
@@ -53,6 +54,7 @@ const Contact = () => {
             }
           })
           .catch(err => console.error("Failed to send. Error: ", err))
+        
         updateFeedback("");
         updateSenderEmail("");
     }
@@ -153,18 +155,21 @@ const Contact = () => {
                 </Row>
                 <Row className={classes.lastRow}>
                     <Col>
-                        <p><strong>&copy;JoyceLiao2022</strong></p>
+                        <p><strong>&copy;JoyceChen2026</strong></p>
                     </Col>
                     <Col>
-                        <Nav.Link className={classes.upButtonContainer}>
-                            <Link
-                                to="home"
-                                spy={true} 
-                                duration={200}
-                                className={classes.upButton}>
-                                    <FaRegArrowAltCircleUp size="lg"/>
-                            </Link>
-                        </Nav.Link>
+                    <Nav.Link 
+                        as={Link}
+                        className={classes.upButtonContainer}
+                        to="home"
+                        spy={true} 
+                        smooth={true}
+                        duration={200}
+                    >
+                        <span className={classes.upButton}>
+                            <FaRegArrowAltCircleUp size="lg"/>
+                        </span>
+                    </Nav.Link>
                     </Col>
                 </Row>
             </Container>
