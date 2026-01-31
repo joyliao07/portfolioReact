@@ -1,10 +1,12 @@
 # Getting Started with Create React App
 
-The portfolio is built with React js and contains simple JavaScript animation effects. It showcases my tech stacks, projects, and volunteer experiences. You are welcome to send me a message by using the contact form on the website!
+Please visit the deployed website https://delightful-water-01e2a9e1e.4.azurestaticapps.net/ 
 
-**Tech Stack:** React js, CSS Modules, Bootstrap5, JavaScript Animation, Heroku
+This portfolio is built with React and features lightweight JavaScript animations. It highlights my technical skill set, personal projects, and volunteer experience. Feel free to reach out using the contact form at the bottom of the site!
 
-Please visit the deployed website https://jl-portfolio-react.herokuapp.com/.
+**Tech Stack:** ReactJS, JS Animation, Azure
+
+(Old deployed website: https://jl-portfolio-react.herokuapp.com/)
 
 ## Available Scripts
 
