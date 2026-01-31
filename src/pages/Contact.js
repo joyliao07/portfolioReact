@@ -111,12 +111,12 @@ const Contact = () => {
                         <p>Please message me to discuss coding or simply get to know each other. I look forward to hearing from you!</p>
                         <p>Please allow 24-hour response time.</p>
                         <p>GitHub:  
-                            <a href="https://github.com/joyliao07" target="_blank">
+                            <a href="https://github.com/joyliao07" target="_blank" rel="noreferrer">
                                 www.github.com/joyliao07 
                             </a>
                         </p>
                         <p>LinkedIn: 
-                            <a href="https://www.linkedin.com/in/joyceliao-seattle" target="_blank">
+                            <a href="https://www.linkedin.com/in/joyceliao-seattle" target="_blank" rel="noreferrer">
                                 www.linkedin.com/in/joyceliao-seattle 
                             </a>
                         </p>
