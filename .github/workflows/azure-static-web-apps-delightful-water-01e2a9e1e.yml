@@ -31,7 +31,13 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
+        env:
+          # This pulls the secret from GitHub and injects it into the build
+          REACT_APP_emailjsServiceId: ${{ secrets.REACT_APP_emailjsServiceId }}
+          REACT_APP_emailjsPublicKey: ${{ secrets.REACT_APP_emailjsPublicKey }}
+          REACT_APP_emailjsTemplateId: ${{ secrets.REACT_APP_emailjsTemplateId }}
           ###### End of Repository/Build Configurations ######
+          
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
