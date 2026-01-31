@@ -23,8 +23,8 @@ const ProjectModal = (props) => {
     return(
         <div className={classes.screen} onClick={closeHandler}>
             <div className={classes.projectBox}>
-                <h3>{props.name}</h3>
-                <h5>{props.tech}</h5>
+                <h2>{props.name}</h2>
+                <h3>{props.tech}</h3>
                 <p>{props.story}</p>
                 <div className={classes.gitBox}>
                     <div className={classes.gitIcon}>

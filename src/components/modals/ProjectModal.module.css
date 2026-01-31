@@ -12,20 +12,21 @@
     justify-content: center;
 }
 
-.projectBox h3 {
-    padding-top: 5%;
-    padding-bottom: 3%;
+.projectBox h2 {
+    font-size: 25px;
+    padding-bottom: 1%;
     color:rgba(68, 67, 67, 0.85);
 }
 
-.projectBox h5 {
-    padding-bottom: 4%;
+.projectBox h3 {
+    font-size: 17px;
     color:rgba(68, 67, 67, 0.85);
 }
 
 .projectBox p {
     padding-bottom: 1%;
     font-size: 0.9em;
+    line-height: 25px;
 }
 
 .projectBox {

@@ -40,6 +40,7 @@
     background-color: rgb(122, 221, 228);
     border: solid 3px rgb(122, 221, 228);
     border-radius: 4px;
+    margin-bottom: 80px;
 }
 
 .button:hover {
@@ -80,8 +81,7 @@
 /* Desktop view: */
 @media (min-width: 990px) { /* 990px for columns' breakpoint */
     .parent {
-        min-height: 1100px;
-        height: 100vh;
+        height: 1400px;
     }
 
     .banner {

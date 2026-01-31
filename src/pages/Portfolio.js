@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import classes from './Portfolio.module.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioBlock from '../components/PortfolioBlock';
 import SectionBanner from '../components/SectionBanner';
 import { Element } from 'react-scroll';
 import ProjectModal from '../components/modals/ProjectModal';
 import projectDetails from '../assets/projectDetails';
+import projectDetailsFeatured from '../assets/projectDetailsFeatured';
 
 
 const Portfolio = () => {
@@ -43,7 +43,30 @@ const Portfolio = () => {
             }
             <SectionBanner section="Portfolio"/>
             <Container>
-                <Row className={classes.outerContainer}>
+                <Row className={`${classes.outerContainer} justify-content-center`}>
+                    <Col xs={12} className="text-center">
+                        <h3 style={{ marginBottom: '40px' }}>Featured Projects</h3>
+                    </Col>
+                    
+                    {projectDetailsFeatured.map( project => {
+                        return <PortfolioBlock 
+                                    key={project.name}
+                                    name={project.name} 
+                                    tech={project.tech} 
+                                    story={project.story}
+                                    color={project.color}
+                                    git={project.git}
+                                    deploy={project.deploy}
+                                    colorHover={project.colorHover}
+                                    open={modalOpenHandler} />
+                    })}
+                </Row>
+            </Container>
+            <Container>
+                <Row className={`${classes.outerContainer} justify-content-center`}>
+                    <Col xs={12} className="text-center">
+                        <h3 style={{ marginBottom: '40px' }}>Previous Projects</h3>
+                    </Col>
                     {projectDetails.map( project => {
                         return <PortfolioBlock 
                                     key={project.name}
@@ -57,6 +80,7 @@ const Portfolio = () => {
                                     open={modalOpenHandler} />
                     })}
                 </Row>
+
             </Container>
             <div className={classes.base}></div>
         </Element>

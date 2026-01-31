@@ -1,6 +1,5 @@
 /* rgb(234, 244, 249) */
 .parent {
-    padding-top: 15%;
     background: rgb(221, 248, 248);
 }
 
@@ -17,8 +16,7 @@
 @media (min-width: 990px) {
     .parent {
         padding-top: 0;
-        min-height: 1050px;
-        height: 100vh;
+        height: 1700px;
     }
 
     .base {
