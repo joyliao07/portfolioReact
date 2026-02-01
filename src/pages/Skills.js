@@ -18,12 +18,17 @@ const Skills = () => {
                 </Row>
                 <Row className={`${classes.description}`} style={{marginLeft: '15%', marginRight: '15%' }}>
                     <h4 style={{ lineHeight: '2', marginTop: '10px' }}>
-                        Joyce is a <span style={{ color: "black" }}>Backend Engineer</span> who specializes in building <span style={{ color: "black" }}>secure, reliable microservice systems</span> for regulated and security-sensitive environments. She brings strong expertise in <span style={{ color: "black" }}>C#, ASP.NET, SQL, Java, and cloud platforms</span>, and has contributed to FICAM-compliant ICAM/PACS solutions aligned with federal security standards.
+                        Joyce is a <span style={{ color: "black" }}>Backend Engineer</span> who specializes in building <span style={{ color: "black" }}>secure, reliable microservice systems</span> for regulated and security-sensitive environments. She brings strong expertise in <span style={{ color: "black" }}>C#, ASP.NET, SQL, Java</span>, and cloud platforms, and has contributed to <span style={{ color: "black" }}>FICAM-compliant ICAM/PACS solutions</span> aligned with federal security standards.
                     </h4>
                 </Row>
                 <Row className={`${classes.description}`} style={{marginLeft: '15%', marginRight: '15%'}}>
                     <h4 style={{ lineHeight: '2' }}>
-                        She enjoys working on complex backend problems and has experience using <span style={{ color: "black" }}>AI-integrated tools</span> (such as Grok) to improve developer productivity and code security. Joyce focuses on writing clean, maintainable code and deliverying systems that are scalable, auditable, and dependable — especially in mission-critical contexts where security and reliability matter.
+                        She enjoys working on complex backend problems and has experience using <span style={{ color: "black" }}>AI-integrated tools</span> (such as Grok) to improve developer productivity and code security. Joyce focuses on writing clean, maintainable code and deliverying systems that are <span style={{ color: "black" }}>scalable, auditable, and reliable</span> — especially in mission-critical contexts where <span style={{ color: "black" }}>security and reliability</span> matter.
+                    </h4>
+                </Row>
+                <Row className={`${classes.description}`} style={{marginLeft: '15%', marginRight: '15%'}}>
+                    <h4 style={{ lineHeight: '2' }}>
+                        Joyce has completed formal training in <span style={{ color: "black" }}>secure systems and software development</span> and actively pursues ongoing professional development in <span style={{ color: "black" }}>application security</span> and <span style={{ color: "black" }}>secure software engineering</span>.
                     </h4>
                 </Row>
                 <Row className={`${classes.buttonRow} d-flex justify-content-center`}>

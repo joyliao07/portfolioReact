@@ -81,7 +81,7 @@
 /* Desktop view: */
 @media (min-width: 990px) { /* 990px for columns' breakpoint */
     .parent {
-        height: 1400px;
+        height: 1600px;
     }
 
     .banner {
