@@ -11,7 +11,7 @@ const projectDetails = [
     tech:"ReactJS | Bootstrap | JS Animation", 
     story: "The portfolio is built with React js and contains simple JavaScript animation. It showcases my tech stacks, projects, and volunteer experiences. You are welcome to send me a message by using the contact form on the website!",
     git:"https://github.com/joyliao07/portfolioReact",
-    deploy:"https://jl-portfolio-react.herokuapp.com/",
+    deploy:"https://delightful-water-01e2a9e1e.4.azurestaticapps.net/",
     color: "(224, 241, 245)",
     colorHover: "(60, 164, 196)"},
 
