@@ -65,7 +65,7 @@ const Portfolio = () => {
             <Container>
                 <Row className={`${classes.outerContainer} justify-content-center`}>
                     <Col xs={12} className="text-center">
-                        <h3 style={{ marginBottom: '40px' }}>Previous Projects</h3>
+                        <h3 style={{ marginBottom: '40px' }}>Project History</h3>
                     </Col>
                     {projectDetails.map( project => {
                         return <PortfolioBlock 
